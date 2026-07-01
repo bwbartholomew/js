@@ -68,10 +68,10 @@
 // додати буль з ключем: like flowers
 // вивести результат в консоль
 
-let user = {};
-user.name = "Simon";
-user.age = 25;
-user.city = "London";
+// let user = {};
+// user.name = "Simon";
+// user.age = 25;
+// user.city = "London";
 // console.log(user);
 
 // delete user.city
@@ -81,6 +81,9 @@ user.city = "London";
 //***10**
 // За допомогою циклу  “for…in” вивести в консоль ключі і значення об*єкта
 
-for (let key in user)
-    // console.log(key);
-    console.log(user[key]);
+// for (let key in user)
+//     // console.log(key);
+//     console.log(user[key]);
+ 
+
+// апрвр
