@@ -1,89 +1,107 @@
+// Якщо змінна більше нуля - виведіть true, менше - false
+//Перевірте це на варіантах  1, 0, -3.
 
-//***1***
-// Робота зі змінними
-// Оголосіть дві змінні: name та city.
-// Присвойте значення "Іван" змінній name.
-// Скопіюйте значення зі змінної name в city.
-// Виведіть значення змінної city, використовуючи функцію console.log (яка повинна показати “Іван”).
+// const a = -3;
+// if (a > 0) {
+//     console.log(true)
+// } else if (a < 0) {
+//     console.log(false)
+// }
 
-// let name = "Іван";
-// let city = name;
-// console.log(city);
+// Якщо змінна ="test" - виведіть true,
+//Перевірте це на варіантах  'test', "qwerty", true
 
+// const a = "test";
+// if (a === "test") {
+//     console.log(true);
+// }
 
+// Якщо змінна більше 10 -  відніміть 5,
+//менше - додайте 5, результат виведіть в консоль
+//Перевірте це на варіантах  1, 10, 13.
 
-//***2***
-//Який буде результат виконання скрипта?
-// let name = "Olga";
-// console.log(`привіт ${1}`);// привіт 1
-// console.log(`привіт ${"name"}`);  //  привіт name
-// console.log(`привіт ${name}`); // привіт Olga
+// const newValue = 1;
 
-
-
-//***3***
-//Видобути число зі змінних
-// let a = "5";
-// let b = "13cvb";
-// let c = "12.9sxdcfgv";
-// // вивести в консоль тип
-// let NumA = Number(a);
-// console.log(NumA);
-// let NumB = parseInt(b);
-// console.log(NumB);
-// let NumC = parseFloat(c);
-// console.log(NumC);
-
-//***4***
-//Зробіть, щоб 0.1 + 0.2 = 0.3
-// let result = (0.1 * 10 + 0.2 * 10) / 10;
-// console.log(result);
+// if (newValue >= 10) {
+//     console.log(newValue - 5);
+// }
+//     else if (newValue < 10) {
+//     console.log(newValue + 5);
+//     }
 
 
-//***5**
-//Поверніть найбільше число с набору 20, 10, 50, 40
-// let maxNumber = Math.max(20, 10, 50, 40);
-// console.log(maxNumber);
+//Зробіть сервіс який отримує число від 1 до 12
+// виведіть місяць який дорівнює числу
+
+// const number = prompt("Введіть число");
+// let month;
 
 
+// switch (number) {
+//     case "1":
+//     month = "January";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "2":
+//     month = "February";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "3":
+//     month = "March";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "4":
+//     month = "April";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "5":
+//     month = "May";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "6":
+//     month = "June";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "7":
+//     month = "July";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "8":
+//     month = "August";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "9":
+//     month = "September";1315
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "10":
+//     month = "October";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "11":
+//     month = "November";
+//         alert(`${number} is ${month}`);
+//         break;
+//     case "12":
+//     month = "December";
+//         alert(`${number} is ${month}`);10
+//         break;
+    
+//     default: alert("False");
+// }
 
-//***6**
-//Поверніть випадкове число в діапазоні від 2 до 4
-// (Math.random() * ((4 - 2) + 1));
+//Зробіть сервіс який отримує тризначне число
+//Поверніть користувачу сумму цих чисел
 
-//***7**
-//дізнатись довжину message
-// const message = "Welcome to Bahamas!";
-// const length = message.length
-// console.log(length);
-//***8**
-//вивести в консоль message  великими літерами
-// console.log(message.toLocaleUpperCase());
+// const number = Number(prompt("Введіть тризначне число:"));
 
-//***9**
-// створити пустий об*єкт
-// додати туди ім*я, вік і місто
-// вивести результат в консоль
-// видалити місто
-// додати буль з ключем: like flowers
-// вивести результат в консоль
+// if (number >= 100 && number <= 999) {
+//     const sum =
+//         Math.floor(number / 100) +
+//         Math.floor((number % 100) / 10) +
+//         (number % 10);
 
-// let user = {};
-// user.name = "Simon";
-// user.age = 25;
-// user.city = "London";
-// console.log(user);
-
-// delete user.city
-// user["like flowers"] = true;
-// console.log("Result 2:", user);
-
-//***10**
-// За допомогою циклу  “for…in” вивести в консоль ключі і значення об*єкта
-
-// for (let key in user)
-//     // console.log(key);
-//     console.log(user[key]);
- 
-
-// апрвр
+//     alert("Сума цифр: " + sum);
+// } else {
+//     alert("Введіть коректне тризначне число.");
+// }
